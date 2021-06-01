@@ -1,0 +1,125 @@
+<!---->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mohamed Mahdi Personnal Site</title>
+  </head>
+  <body>
+    <h1>HTML avancé :</h1>
+    <hr>
+    <h3>Work Experience</h3>
+    <!--Création d'un table avec tr pour les lignes et td pour les cases-->
+    <!--thead pour l'en-tête de la table, tb pour le corps de la table et tf pour la partie basse de la table-->
+    <!--th pour une ligne dans l'en-tête et thead pour l'en-tête-->
+    <!--Il est possible d'utiliser les attributs des tables, mais c'est obselete comparant à CSS-->
+    <table cellspacing="20">
+      <thead>
+        <tr>
+          <th>Année</th>
+          <th>Activités</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2012-2016</td>
+          <td>Préparation du doctorat en informatique</td>
+        </tr>
+        <tr>
+          <td>2016-2017</td>
+          <td>Attaché temporaire d'enseignement et de recherche</td>
+        </tr>
+        <tr>
+          <td>2017-</td>
+          <td>Enseignement chercheur à l'école nationale polytechnique de Constantine</td>
+        </tr>
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+    </table>
+    <hr size="3" noshade>
+    <!--Utilisation d'une table pour afficher une image à côté d'un texte-->
+    <table cellspacing="20">
+      <tr>
+        <td><img src="Melaku.png" height="300" alt="C'est mon image à moi :)"></td>
+        <td><h1>Test</h1><br><p>Teste pour mettre une image à côté d'un texte en utilisant les tableaux.</p><br><p>Il est possible d'utiliser CSS qui est encore mieux que HTML for styling.</p></td>
+      </tr>
+    </table>
+
+    <hr size="3" noshade>
+    <!--Exercice : il est possible d'utiliser des formes en utilisant HTML mais cde n'est pas une bonne idée.
+      Une table à l'interieur d'une autre table-->
+    <h3>Skills</h3>
+    <table cellspacing="20">
+      <tr>
+        <td>
+          <table >
+            <tbody>
+              <tr>
+                <td >Java desktop langage</td>
+                <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+              </tr>
+              <tr>
+                <td>HTML, CSS and JavaScript</td>
+                <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
+              </tr>
+              <tr>
+                <td>Web design</td>
+                <td>&#9733;&#9734;&#9734;&#9734;&#9734;</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table >
+            <tbody>
+              <tr>
+                <td>Gaming</td>
+                <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+              </tr>
+              <tr>
+                <td >Android</td>
+                <td>&#9733;&#9734;&#9734;&#9734;&#9734;</td>
+              </tr>
+              <tr>
+                <td>Autres</td>
+                <td>&#9733;&#9734;&#9734;&#9734;&#9734;</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <hr size="3" noshade>
+  <a href="#"></a>
+  <!--Form : pour que cela soit fonctionnel, il faut java script-->
+  <h3>Me contacter</h3>
+  Preparatory departement of <a href="www.enp-constantine.dz" target="_blank">ENPC</a>
+  <br>
+  <a href="http://www.mohamedmahdibenmoussa.com" target="_blank">My personal website for freelance web developement</a>
+  <br>
+  <a href="http://www.djissre.com" target="_blank">Djissre society that I work with</a>
+  <p>Phone number : 0.00.00.00.00</p>
+  <p>myemail@gmail.com</p>
+  <!--Cet élément permet de faire les formulaires de contacter
+    l'attribut action dans form indique l'action (le fichier) à suivre ou par exemple envoyer un email (mailto:mail)
+
+    label pour le titre
+    input : pour zone de text, mot de passe, boutton d'envoie, case à cocher, etc (voir MDN)
+    Textarea est une zone pour récupérer des messages-->
+  <form enctype="text/plain" action="mailto:benmoussa.mohamed.mahdi@gmail.com" method="post">
+    <label>Votre Nom:</label>
+    <input type="text" name="votreNom" value=""><br>
+    <label>Votre mail :</label>
+    <input type="email" name="votreMail" value=""><br>
+    <label>Votre message :</label><br>
+    <textarea name="votreMessage" rows="8" cols="80"></textarea><br>
+    <label>Voulez-vous une inscription dans la mailing list</label>
+    <input type="checkbox" name="" value=""><br>
+    <label>Mot de passe :</label>
+    <input type="password" name="" value="">
+    <input type="submit" name="">
+  </form>
+</html>
