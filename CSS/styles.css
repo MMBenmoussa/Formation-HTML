@@ -1,0 +1,29 @@
+/*Ajouter du code CSS d'une manière interne, ce qui s'applique à tous les éléments avec le tag en question*/
+/*Sa doit être dans dans la section "head"
+/*Les modifications s'appliquent uniquement sur la page actuelle, pour le faire appliquer à tout le monde, il faut :*/
+/*Il y a du CSS par défaut, voir la page : https://www.w3schools.com/cssref/css_default_values.asp*/
+
+
+/*Style : est un attribut qui prend en compte du CSS code
+  background-color: blue; permet de mettre la couleur de l'arrière plant
+  Site pour plus d'informations : https://developer.mozilla.org/fr/docs/Web/CSS/background-color
+  Site également pour les couleurs : https://colorhunt.co
+  Liste des couleurs : https://developer.mozilla.org/fr/docs/Web/CSS/color_value*/
+
+  body {
+    background: #EAF6F6;
+  }
+
+  hr {/*Voir la documentation pour les différentes options*/
+    /*background: white;*/
+    border-style: dotted none none none;/*Enlever les bordures pour pouvoir changer la couleur*/
+    border-color: grey;
+    border-width: 5px;
+    /*height: 2px;la hauteur de la ligne à changer pour quelle apparaisse*/
+    width: 5%;/*la longueur, en utilisant le % sa permet de conserver toujours par exemple 30% de la taille de la page et donc cela s'adapte que ce soit pour les smartphones, tablettes ou pc*/
+  }
+
+  h1,h3{
+    color: #66BFBF;
+    text-align: center;
+  }
